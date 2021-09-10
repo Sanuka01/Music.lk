@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>E-Music.lk | Home</title>
+    <link rel="stylesheet" href="nav.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-Music.lk | Home</title>
+    <!--Ion Icons-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <!--Our own stylesheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+<nav>
+
+    <div class="menu-icon">
+        <span class="fas fa-bars"></span>
+    </div>
+    <div class="nav-items">
+        <li class="nav-item">
+            <a href="html/home.html" class="nav-link current">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="html/history.html" class="nav-link">History</a>
+        </li>
+        <li class="nav-item">
+            <a href="html/music.html" class="nav-link">Music</a>
+        </li>
+        <li class="nav-item">
+            <a href="html/notes.html" class="nav-link">E-Notes</a>
+        </li>
+        <li class="nav-item">
+            <a href="html/videos.html" class="nav-link">Videos</a>
+        </li>
+    </div>
+    <div class="search-icon">
+        <span class="fas fa-search"></span>
+    </div>
+    <div class="cancel-icon">
+        <span class="fas fa-times"></span>
+    </div>
+    <form action="#">
+        <input type="search" class="search-data" placeholder="Search" required>
+        <button type="submit" class="fas fa-search"></button>
+    </form>
+
+</nav>
+<script>
+    const menuBtn = document.querySelector(".menu-icon span");
+    const searchBtn = document.querySelector(".search-icon");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    const form = document.querySelector("form");
+    menuBtn["onclick"] = ()=>{
+        items.classList.add("active");
+        menuBtn.classList.add("hide");
+        searchBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = ()=>{
+        items.classList.remove("active");
+        menuBtn.classList.remove("hide");
+        searchBtn.classList.remove("hide");
+        cancelBtn.classList.remove("show");
+        form.classList.remove("active");
+        cancelBtn.style.color = "#ff3d00";
+    }
+    searchBtn.onclick = ()=>{
+        form.classList.add("active");
+        searchBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+    }
+</script>
+
+<main>
+    <section class="hero">
+        <div class="container">
+            <div class="main-massage">
+                <h1>E-Music.lk</h1>
+                <h2>Music notations & songs</h2>
+                <p>E-Music.lk is a srilanakan #1 eastern music notations website for srilankan students.not only that we have 100,000,000 songs in different categories like Hindi,Sinhala,English & etc.So Learn,watch & practice and subscribe for more.
+                </p>
+                <div class="cta">
+                    <a href="html/login.html" class="btn">Login in or Register</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="introduction">
+        <div class="container">
+            <div class="title-heading">
+                <h3>HOW</h3>
+                <h1>to use website ?</h1>
+                <p>1 st of all follow this three steps for the use website</p>
+            </div>
+            <div class="intro-grid">
+                <!--grid item #1-->
+                <div class="intro-grid-item-person">
+                    <h1>Login or Register</h1>
+                    <i class="icon ion-md-person"></i>
+                    <p>To login to your Art.lk account, please use the Login/Register link in the upper-right section of the page.
+                    </p>
+                </div>
+                <!--grid item #2-->
+                <div class="intro-grid-item-video">
+                    <h1>Wtch video or download notations</h1>
+                    <i class="icon ion-md-videocam"></i>
+                    <h2>Step 02</h2>
+                    <p>Now you are all done so this step isn't required but if you want to watch videos or practice a notation click videos or E-music label on desktops or click menu icon on android phones.
+                    </p>
+                </div>
+                <!--grid item #3-->
+                <div class="intro-grid-item-history">
+                    <h1>History of E-music</h1>
+                    <i class="icon ion-md-timer"></i>
+                    <h2>Step 03</h2>
+                    <p> click history learn about history of eastern music in India AND Srilanka.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonial">
+                <div class="testimonial-text-box">
+                    <p>Owner of the website</p>
+                    <i class="icon ion-md-quote"></i>
+                </div>
+                <div class="testimonial-owner">
+                    <img src="images/56.jpg" alt="">
+                    <h1>Sanuka Dinsara</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about us">
+        <div class="container">
+            <div class="title-heading">
+                <h1>About Us</h1>
+                <h2>contact us on fb or whatsapp</h2><br><br><br>
+                <p>Owner:- Sanuka dinsara</p>
+                <p>web designer:- Sanuka dinsara</p>
+                <p>assistants:- Savindu Wijesiri</p>
+            </div>
+        </div>
+        <div class="about-grid">
+            <!--grid item #1-->
+            <div class="about-grid-item-sanuka">
+                <h1>Sanuka Dinsara</h1>
+                <img src="images/56.jpg" alt="">
+                <p>I offer a variety of services ranging from Website Design, Graphic Design and Illustrations. I specialize in these three areas of service. However, if you have a project that doesn't fit into these categories, contact me and I will do my best to accommodate your needs and fulfill your objectives.
+                </p>
+
+            </div>
+            <!--grid item #2-->
+            <div class="about-grid-item-savindu">
+                <h1>Savindu Wijesiri</h1>
+                <img src="images/44.jpg" alt="">
+                <p>I'm a young, energetic, passionate and growing graphic designer and full stack web / software developer with over 3 years of experience in the field. I love what I do best: design and development, so I can guarantee your utmost satisfaction with my services.</p>
+                <A href="https://www.savinduwijesiri.com/">savindu wijesiri</A>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+<footer>
+
+    <div class="social>">
+        <div class="yt">
+            <h1>
+                <A href="https://www.youtube.com/channel/UCCjxER-K_GBU2Di7cvx29IA">
+                    <i class="ion-logo-youtube"></i>
+                </A>
+            </h1>
+        </div>
+        <div class="fb">
+            <h1>
+                <A href="https://www.youtube.com/channel/UCCjxER-K_GBU2Di7cvx29IA">
+                    <i class="ion-logo-facebook"></i>
+                </A>
+            </h1>
+        </div>
+    </div>
+    <div class="wp">
+        <h1>
+            <A href="https://chat.whatsapp.com/FD54US5DJHLLy8VFN1KvN3">
+                <i class="ion-logo-whatsapp"></i>
+            </A>
+        </h1>
+    </div>
+    <p>&copy; 2021 musics. All rights reserved</p>
+</footer>
+</html>
